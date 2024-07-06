@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from communication/srv/SimulationReset.srv
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose.idl"
+#include "sensor_msgs/msg/JointState.idl"
+#include "std_msgs/msg/Header.idl"
+
+module communication {
+  module srv {
+    struct SimulationReset_Request {
+      std_msgs::msg::Header header;
+
+      geometry_msgs::msg::Pose base_pose;
+
+      sensor_msgs::msg::JointState joint_state;
+    };
+    struct SimulationReset_Response {
+      boolean is_success;
+    };
+  };
+};

@@ -1,0 +1,11 @@
+source;share/hardware/hook/cmake_prefix_path.ps1
+source;share/hardware/hook/cmake_prefix_path.dsv
+source;share/hardware/hook/cmake_prefix_path.sh
+source;share/hardware/hook/ld_library_path_lib.ps1
+source;share/hardware/hook/ld_library_path_lib.dsv
+source;share/hardware/hook/ld_library_path_lib.sh
+source;share/hardware/local_setup.bash
+source;share/hardware/local_setup.dsv
+source;share/hardware/local_setup.ps1
+source;share/hardware/local_setup.sh
+source;share/hardware/local_setup.zsh
