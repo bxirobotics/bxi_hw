@@ -1,0 +1,4 @@
+source;share/communication/environment/ament_prefix_path.sh
+source;share/communication/environment/library_path.sh
+source;share/communication/environment/path.sh
+source;share/communication/environment/pythonpath.sh

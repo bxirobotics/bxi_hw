@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from communication/msg/ActuatorCmds.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module communication {
+  module msg {
+    struct ActuatorCmds {
+      std_msgs::msg::Header header;
+
+      sequence<string> actuators_name;
+
+      sequence<float> kp;
+
+      sequence<float> pos;
+
+      sequence<float> kd;
+
+      sequence<float> vel;
+
+      sequence<float> torque;
+    };
+  };
+};

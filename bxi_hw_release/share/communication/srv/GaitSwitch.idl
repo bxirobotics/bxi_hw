@@ -1,0 +1,18 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from communication/srv/GaitSwitch.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module communication {
+  module srv {
+    struct GaitSwitch_Request {
+      std_msgs::msg::Header header;
+
+      string gait_name;
+    };
+    struct GaitSwitch_Response {
+      boolean is_success;
+    };
+  };
+};
