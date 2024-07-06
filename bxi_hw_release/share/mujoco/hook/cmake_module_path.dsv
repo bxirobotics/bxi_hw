@@ -1,0 +1,1 @@
+prepend-non-duplicate;CMAKE_MODULE_PATH;share/mujoco/cmake
