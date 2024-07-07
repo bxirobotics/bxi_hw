@@ -11,9 +11,9 @@ def generate_launch_description():
     return LaunchDescription(
         [
             Node(
-                package="hardware",
-                executable="hardware",
-                name="hardware",
+                package="remote_controller",
+                executable="remote_controller",
+                name="remote_controller",
                 output="screen",
                 parameters=[
                     # {"simulation/model_file": xml_file},
