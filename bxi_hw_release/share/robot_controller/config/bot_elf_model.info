@@ -8,9 +8,9 @@ foot_traj_height       0.10
 
 foot_hold_gain         0.2
 
-is_real                1
+is_real                0
 
-use_odom               0
+use_odom               1
 
 foot_name             
 {

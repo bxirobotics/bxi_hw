@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from communication/srv/RobotReset.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module communication {
+  module srv {
+    struct RobotReset_Request {
+      std_msgs::msg::Header header;
+
+      int32 reset_step;
+
+      @verbatim (language="comment", text=
+        "only for simulation")
+      boolean release;
+    };
+    struct RobotReset_Response {
+      boolean is_success;
+    };
+  };
+};
