@@ -1,0 +1,11 @@
+source;share/keyboard_controller/hook/cmake_prefix_path.ps1
+source;share/keyboard_controller/hook/cmake_prefix_path.dsv
+source;share/keyboard_controller/hook/cmake_prefix_path.sh
+source;share/keyboard_controller/hook/ld_library_path_lib.ps1
+source;share/keyboard_controller/hook/ld_library_path_lib.dsv
+source;share/keyboard_controller/hook/ld_library_path_lib.sh
+source;share/keyboard_controller/local_setup.bash
+source;share/keyboard_controller/local_setup.dsv
+source;share/keyboard_controller/local_setup.ps1
+source;share/keyboard_controller/local_setup.sh
+source;share/keyboard_controller/local_setup.zsh

@@ -10,6 +10,10 @@ srv/GaitSwitch.idl
 srv/GaitSwitch.srv
 srv/GaitSwitch_Request.msg
 srv/GaitSwitch_Response.msg
+srv/RobotReset.idl
+srv/RobotReset.srv
+srv/RobotReset_Request.msg
+srv/RobotReset_Response.msg
 srv/SimulationReset.idl
 srv/SimulationReset.srv
 srv/SimulationReset_Request.msg
