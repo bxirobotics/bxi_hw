@@ -55,7 +55,7 @@ add_library(core::core SHARED IMPORTED)
 
 set_target_properties(core::core PROPERTIES
   INTERFACE_COMPILE_OPTIONS "-O2;-mtune=generic;-fPIC;-pthread;-Wfatal-errors;-Wl,--no-as-needed;-DBOOST_ALL_DYN_LINK"
-  INTERFACE_INCLUDE_DIRECTORIES "/usr/include/eigen3;${_IMPORT_PREFIX}/include;/usr/include;/home/liufq/bot_elf/Bipedal_elf/install/include;${_IMPORT_PREFIX}/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/usr/include/eigen3;${_IMPORT_PREFIX}/include;/home/liufq/bot_elf/Bipedal_elf/install/include;/usr/include;${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "proxsuite::proxsuite-vectorized;rcpputils::rcpputils"
 )
 

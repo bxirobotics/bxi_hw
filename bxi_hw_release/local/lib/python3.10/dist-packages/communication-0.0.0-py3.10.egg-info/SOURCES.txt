@@ -11,4 +11,5 @@ communication/msg/_state_estimator.py
 communication/msg/_touch_sensor.py
 communication/srv/__init__.py
 communication/srv/_gait_switch.py
+communication/srv/_robot_reset.py
 communication/srv/_simulation_reset.py
