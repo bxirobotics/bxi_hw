@@ -11,9 +11,20 @@ def generate_launch_description():
     return LaunchDescription(
         [
             Node(
-                package="example",
-                executable="example",
-                name="example",
+                package="hardware",
+                executable="hardware",
+                name="hardware",
+                output="screen",
+                parameters=[
+                ],
+                emulate_tty=True,
+                arguments=[("__log_level:=debug")],
+            ),
+            
+            Node(
+                package="bxi_example",
+                executable="bxi_example",
+                name="bxi_example",
                 output="screen",
                 parameters=[
                     {"/topic_prefix": "hardware/"},
