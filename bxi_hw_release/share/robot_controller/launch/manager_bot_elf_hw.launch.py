@@ -35,6 +35,16 @@ def generate_launch_description():
                 period=2.0,
                 actions=[
                     Node(
+                        package="hardware",
+                        executable="hardware",
+                        name="hardware",
+                        output="screen",
+                        parameters=[
+                        ],
+                        emulate_tty=True,
+                        arguments=[("__log_level:=debug")],
+                    ),
+                    Node(
                         package="robot_controller",
                         executable="robot_controller",
                         name="robot_controller",

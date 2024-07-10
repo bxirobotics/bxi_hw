@@ -20,7 +20,6 @@ def generate_launch_description():
                 emulate_tty=True,
                 arguments=[("__log_level:=debug")],
             ),
-            
             Node(
                 package="bxi_example",
                 executable="bxi_example",

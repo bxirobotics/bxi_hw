@@ -20,6 +20,7 @@
 2. 运行自带控制算法需安装`pinocchio 2.7.1`，并设置环境变量`LD_LIBRARY_PATH`
 3. 运行`mujoco`仿真需安装`libglfw3-dev`
 4. 将`source xxx/bxi_hw_realease/setup.bash`加入`.bashrc`，运行真机需以`root`用户运行
+5. 设置`udev rules`，固定`IMU`设备名称为`/dev/ttyIMU`
 
 ### 软件系统介绍
 
@@ -45,7 +46,11 @@
 4. 上述命令同时启动机器人节点和一个控制节点
 
 ### 运行基础控制程序
-TODO:
+提前连接遥控器
+1. 启动遥控器节点：`ros2 launch remote_controller remote_conroller_launch.py`
+2. 启动仿真节点和控制节点：`ros2 launch robot_controller manager_bot_elf.launch.py`
+3. 间隔一秒按两次遥控器模式切换按钮启动机器人，按键定义见开箱说明
+4. 运行真机程序时将第二条命令改为：`ros2 launch robot_controller manager_bot_elf_hw.launch.py`
 
 <!-- ### 启动节点指令
 
