@@ -4,3 +4,4 @@ build/
 install/
 log/
 __pycache__/
+MUJOCO_LOG.TXT
