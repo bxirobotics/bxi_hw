@@ -52,12 +52,10 @@
 3. 间隔一秒按两次遥控器模式切换按钮启动机器人，按键定义见开箱说明
 4. 运行真机程序时将第二条命令改为：`ros2 launch robot_controller manager_bot_elf_hw.launch.py`
 
-<!-- ### 启动节点指令
+### 其他节点启动指令
 
-1. `mujoco`仿真环境:`ros2 launch mujoco simulation_bot_elf_launch.py`
-2. 遥控器节点:`ros2 launch remote_controller remote_conroller_launch.py`
-3. 运行`hardware`节点：`ros2 launch hardware hardware_launch.py`
-4. 运行控制程序指令：`ros2 launch robot_controller manager_bot_elf.launch.py` -->
+1. `mujoco`节点:`ros2 launch mujoco simulation_bot_elf_launch.py`
+2. `hardware`节点：`ros2 launch hardware hardware_launch.py`
 
 ## 注意事项
 大尺寸机器人有一定的危险性，每一步操作之前一定仔细检查！所有控制程序必须经过仿真后才可上真机运行，有任何异常及时按停止按钮！
