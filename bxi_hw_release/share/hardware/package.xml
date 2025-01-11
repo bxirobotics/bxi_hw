@@ -15,11 +15,11 @@
   <depend>rclcpp</depend>
   <depend>communication</depend>
   <depend>geometry_msgs</depend>
-  <depend>tf2</depend>
-  <depend>tf2_ros</depend>
+  <!-- <depend>tf2</depend>
+  <depend>tf2_ros</depend> -->
   <depend>nav_msgs</depend>
   <depend>sensor_msgs</depend>
-  <depend>cv_bridge</depend>
+  <!-- <depend>cv_bridge</depend> -->
   <exec_depend>ros2launch</exec_depend>
 
   <export>

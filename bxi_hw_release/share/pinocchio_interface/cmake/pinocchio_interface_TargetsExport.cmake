@@ -54,7 +54,7 @@ endif()
 add_library(pinocchio_interface::pinocchio_interface SHARED IMPORTED)
 
 set_target_properties(pinocchio_interface::pinocchio_interface PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/usr/local/lib/pkgconfig/../../include;/opt/ros/humble/lib/x86_64-linux-gnu/pkgconfig/../../../include/urdfdom;/opt/ros/humble/include/urdfdom_headers;/usr/include/eigen3;${_IMPORT_PREFIX}/include;/opt/ros/humble/lib/x86_64-linux-gnu/pkgconfig/../../../include/urdfdom;/opt/ros/humble/include/urdfdom_headers;/usr/local/lib/pkgconfig/../../include;/usr/include/eigen3;${_IMPORT_PREFIX}/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/opt/ros/humble/lib/x86_64-linux-gnu/pkgconfig/../../../include/urdfdom;/opt/ros/humble/include/urdfdom_headers;/usr/local/lib/pkgconfig/../../include;/usr/include/eigen3;${_IMPORT_PREFIX}/include;/opt/ros/humble/lib/x86_64-linux-gnu/pkgconfig/../../../include/urdfdom;/opt/ros/humble/include/urdfdom_headers;/usr/local/lib/pkgconfig/../../include;/usr/include/eigen3;${_IMPORT_PREFIX}/include"
   INTERFACE_LINK_LIBRARIES "pinocchio;boost_filesystem;boost_serialization;boost_system;urdfdom_sensor;urdfdom_model_state;urdfdom_model;urdfdom_world;console_bridge;core::core;/usr/local/lib/libpinocchio.so"
 )
 

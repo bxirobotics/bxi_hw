@@ -55,7 +55,7 @@ add_library(hpipm_ament::hpipm_ament SHARED IMPORTED)
 
 set_target_properties(hpipm_ament::hpipm_ament PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/usr/include/eigen3;${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "hpipm_ament::hpipm;core::core;/home/liufq/bot_elf/Bipedal_elf/install/lib/libblasfeo.so"
+  INTERFACE_LINK_LIBRARIES "hpipm_ament::hpipm;core::core;/opt/bxi/bxi_hw/lib/libblasfeo.so"
 )
 
 # Create imported target hpipm_ament::hpipm
