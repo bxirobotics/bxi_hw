@@ -13,6 +13,7 @@
 8. `robot_controller`:本公司提供的基础控制程序，可以通过遥控器实现全向移动
 * 原代码包，位于 `src/`目录：
 9. `src/bix_example`:机器人控制接口使用示例，实现初始化流程和基础的消息接收和发送
+10. `src/bix_example_py`:机器人强化学习控制示例`python`版,演示如何使用强化学习控制机器人
 
 ## 使用说明
 
@@ -23,6 +24,7 @@
 3. 运行`mujoco`仿真需安装`libglfw3-dev`
 4. 将`source xxx/bxi_hw_realease/setup.bash`加入`.bashrc`，运行真机需以`root`用户运行
 5. 设置`udev rules`，固定`IMU`设备名称为`/dev/ttyIMU`
+6. 运行强化学习示例需安装`torch`
 
 ### 仿真与真机差异
 
@@ -49,6 +51,10 @@
 * 运行`ros2 launch bxi_example example_launch.py`启动 模拟器 + 控制程序    
 * 运行`ros2 launch bxi_example example_launch_hw.py`启动 真机 + 控制程序    
 上述命令同时启动机器人节点和一个控制节点
+3. 运行强化学习示例：
+* 运行`ros2 launch bxi_example_py example_launch.py`启动 模拟器 + 控制程序（强化学习版）    
+* 运行`ros2 launch bxi_example_py example_launch_hw.py`启动 真机 + 控制程序 （强化学习版）
+* 运行`ros2 launch bxi_example_py example_launch_hw_slope.py`启动 真机 + 控制程序 （强化学习上下斜坡）
 
 ### 运行基础控制程序
 提前连接遥控器
