@@ -21,6 +21,8 @@ from sensor_msgs.msg import JointState
 
 robot_name = "bot_elf"
 
+ankle_y_offset = 0.1
+
 joint_name = (
     "l_hip_z_joint",   # 左腿_髋关节_z轴
     "l_hip_x_joint",   # 左腿_髋关节_x轴
@@ -253,6 +255,8 @@ class BxiExample(Node):
         elif self.step == 2:
             with self.lock_in:
                 q = self.qpos
+                q[4] -= ankle_y_offset
+                q[10] -= ankle_y_offset
                 dq = self.qvel
                 quat = self.quat
                 omega = self.omega
@@ -309,6 +313,8 @@ class BxiExample(Node):
             msg.header.stamp = self.get_clock().now().to_msg()
             msg.actuators_name = joint_name
             msg.pos = qpos.tolist()
+            msg.pos[4] += ankle_y_offset
+            msg.pos[10] += ankle_y_offset
             msg.vel = np.zeros(20, dtype=np.float32).tolist()
             msg.torque = np.zeros(20, dtype=np.float32).tolist()
             msg.kp = joint_kp.tolist()
